@@ -3,11 +3,17 @@
   <head>
     <title>Survey Form</title>
     <link href="index.css" type="text/css" rel="stylesheet" />
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
   </head>
   <body>
     <header>
       <h1 id="title">freeCodeCamp Survey Form</h1>
-      <p>Thank you for taking the time to help us improve the platform</p>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
     </header>
 
     <main>
@@ -27,10 +33,10 @@
         />
         <br />
 
-        <label id="number-label" for="age">Age (optional)</label>
+        <label id="number-label" for="number">Age (optional)</label>
         <br />
         <input
-          id="age"
+          id="number"
           type="number"
           placeholder="Enter your age"
           min="8"
@@ -108,6 +114,16 @@
         />
         <label for="data-visualization">Data Visualization</label>
         <br />
+
+        <label for="suggestions">Any Suggestions?</label>
+        <br />
+        <textarea
+          rows="7"
+          cols="50"
+          placeholder="Enter your comments here..."
+        ></textarea>
+
+        <button id="submit">Submit!</button>
       </form>
     </main>
   </body>
