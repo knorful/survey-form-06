@@ -5,6 +5,64 @@
     <link href="index.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Survey Form</h1>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p>Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <main>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <br />
+        <input id="name" type="text" placeholder="Enter your name" required />
+        <br />
+
+        <label id="email-label" for="email">Email</label>
+        <br />
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br />
+
+        <label id="number-label" for="age">Age (optional)</label>
+        <br />
+        <input
+          id="age"
+          type="number"
+          placeholder="Enter your age"
+          min="8"
+          max="99"
+        />
+        <br />
+
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <br />
+        <select id="dropdown">
+          <option value="none" selected disabled>Select an Option</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="full-time-learner">Full Time Learner</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+
+        <label for="would-recommend"
+          >Would you recommed freeCodeCamp to a friend?</label
+        >
+        <br />
+        <input
+          type="radio"
+          id="definitely"
+          name="would-recommend"
+          value="Definitely"
+        />
+        <label for="definitely">Definitely</label>
+      </form>
+    </main>
   </body>
 </html>

@@ -1,0 +1,13 @@
+/* Universal Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  margin-top: 40px;
+}
